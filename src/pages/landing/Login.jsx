@@ -16,6 +16,8 @@ function Login() {
     <br />
     <Link to='/pt-092/docentes'>Docente</Link>
     <br />
+    <Link to='/pt-092/alumnos'>Alumno</Link>
+    <br />
     <br />
     <Link to='/register'>Register</Link>
     </>

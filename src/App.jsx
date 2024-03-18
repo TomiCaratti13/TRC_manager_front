@@ -12,6 +12,9 @@ import Carreras from './pages/administrativo/Carreras.jsx'
 import Docentes from './pages/docente/Docente.jsx'
 import DashboardDoc from './pages/docente/DashboardDoc.jsx'
 import Materias from './pages/docente/Materias.jsx'
+import Cursos from './pages/alumno/Cursos.jsx'
+import DashboardAlum from './pages/alumno/DashboardAlum.jsx'
+import Alumno from './pages/alumno/Alumno.jsx'
 
 
 function App() {
@@ -35,7 +38,10 @@ function App() {
         <Route index element={<DashboardDoc />} />
         <Route path='materias' element={<Materias />} />
       </Route>
-
+      <Route path='/pt-092/alumnos' element={<Alumno />} >
+        <Route index element={<DashboardAlum />} />
+        <Route path='cursos' element={<Cursos />} />
+      </Route>
 
 
       <Route path='*' element={<Navigate to="/" />} />
