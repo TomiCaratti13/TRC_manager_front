@@ -4,7 +4,7 @@ function Instituciones() {
   return (
     <>
       <div>Instituciones</div>
-      <Link to='/'>Regresar</Link>
+      <Link to='/super'>Regresar</Link>
     </>
   )
 }
