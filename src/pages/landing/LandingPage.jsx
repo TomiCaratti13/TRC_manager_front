@@ -5,6 +5,8 @@ function LandingPage() {
   return (
     <>
     <div>LandingPage</div>
+    <br />
+    <br />
     <Outlet />
     </>
   )

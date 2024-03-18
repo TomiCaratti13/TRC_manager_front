@@ -9,6 +9,9 @@ import Instituciones from './pages/super/Instituciones.jsx'
 import Administrativo from './pages/administrativo/Administrativo.jsx'
 import DashboardAdmin from './pages/administrativo/DashboardAdmin.jsx'
 import Carreras from './pages/administrativo/Carreras.jsx'
+import Docentes from './pages/docente/Docente.jsx'
+import DashboardDoc from './pages/docente/DashboardDoc.jsx'
+import Materias from './pages/docente/Materias.jsx'
 
 
 function App() {
@@ -27,6 +30,10 @@ function App() {
       <Route path='/pt-092/administrativo' element={<Administrativo />} >
         <Route index element={<DashboardAdmin />} />
         <Route path='carreras' element={<Carreras />} />
+      </Route>
+      <Route path='/pt-092/docentes' element={<Docentes />} >
+        <Route index element={<DashboardDoc />} />
+        <Route path='materias' element={<Materias />} />
       </Route>
 
 

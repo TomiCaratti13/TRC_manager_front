@@ -1,10 +1,10 @@
 import { Outlet } from "react-router"
 import { Link } from "react-router-dom"
 
-function Super() {
+function Docente() {
   return (
     <>
-      <div>Super</div>
+      <div>Docente</div>
       <Link to='/'>Salir</Link>
       <br />
       <br />
@@ -13,4 +13,4 @@ function Super() {
   )
 }
 
-export default Super
+export default Docente

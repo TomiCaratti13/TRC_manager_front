@@ -9,11 +9,12 @@ function Login() {
     <>
     <div>Login</div>
     <br />
-    <br />
     <Link to='/super'>Admin</Link>
     <br />
     {/* <Link to={`/${registro}/administrativo`}>Administrativo</Link> */}
     <Link to='/pt-092/administrativo'>Administrativo</Link>
+    <br />
+    <Link to='/pt-092/docentes'>Docente</Link>
     <br />
     <br />
     <Link to='/register'>Register</Link>
