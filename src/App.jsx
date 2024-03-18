@@ -3,9 +3,14 @@ import LandingPage from './pages/landing/LandingPage.jsx'
 import Home from './pages/landing/Home.jsx'
 import Login from './pages/landing/Login.jsx'
 import Register from './pages/landing/Register.jsx'
-import Super from './pages/super/Super'
-import Dashboard from './pages/super/Dashboard'
-import Instituciones from './pages/super/Instituciones'
+import Super from './pages/super/Super.jsx'
+import Dashboard from './pages/super/Dashboard.jsx'
+import Instituciones from './pages/super/Instituciones.jsx'
+import Administrativo from './pages/administrativo/Administrativo.jsx'
+import DashboardAdmin from './pages/administrativo/DashboardAdmin.jsx'
+import Carreras from './pages/administrativo/Carreras.jsx'
+
+
 function App() {
 
   return (
@@ -19,6 +24,13 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path='instituciones' element={<Instituciones />} />
       </Route>
+      <Route path='/pt-092/administrativo' element={<Administrativo />} >
+        <Route index element={<DashboardAdmin />} />
+        <Route path='carreras' element={<Carreras />} />
+      </Route>
+
+
+
       <Route path='*' element={<Navigate to="/" />} />
     </Routes >
   )
